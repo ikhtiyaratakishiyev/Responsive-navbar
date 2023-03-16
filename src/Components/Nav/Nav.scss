@@ -1,0 +1,108 @@
+nav{
+    background: #5c5e63;
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+       
+        h1{
+            font-size: 32px;
+            font-weight: 500;
+            color: royalblue;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .nav-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            .nav-item{
+                font-size: 20px;
+                letter-spacing: 1px;
+                list-style: none;
+                color: gray;
+                cursor: pointer;
+                transition: .3s;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    color: black;
+                    border-bottom: 2px solid royalblue;
+                }
+            }
+           .nav-item.active{
+            color: #ffdd40;
+            border: 1px solid #ffdd40;
+           }
+        }
+        .btn-c{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            button{
+                font-size: 18px;
+                font-weight: 500;
+                padding: 8px 16px;
+                letter-spacing: 1px;
+                transition: .2s;
+                &#btn-login{
+                    color: royalblue;
+                    background: #fff;
+                    border-radius: 8px;
+                    &:hover{
+                        background: royalblue;
+                        color: #fff;
+                    }  
+                }
+                &#btn-signUp{
+                    
+                    color: royalblue;
+                    background: #fff;
+                    border-radius: 8px;
+                    &:hover{
+                        background: royalblue;
+                        color: #fff;
+                    }
+                }
+         
+            }
+            
+        }
+    }
+    
+    img{
+        max-width: 20px;
+        height: 20px;
+        display: none;
+    }
+    @media (max-width: 960px) {
+         .nav-item{
+            display: none;
+         }
+        .nav-icon {
+          display: block;
+          color: #fff;
+          font-size: 2rem;
+          cursor: pointer;
+
+        }
+      }
+     @media(max-width:480px){
+      .btn-registr{
+        display: block;
+    }
+        #btn-login, #btn-signUp{
+            display: none;
+        }
+     }
+     @media(max-width:480px){
+        .btn-registr{
+          display: block;
+      }
+        
+       }
+}
